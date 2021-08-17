@@ -1,0 +1,1209 @@
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Myriad Pro Regular'), url("{{ asset('/css/MYRIADPRO-COND.woff') }}") format('woff');
+}
+
+@font-face{ 
+	font-family: 'neumannregular';
+  src: url("td-neumann-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; 
+}
+
+nav {
+  background-color:white;
+  position:fixed;
+  z-index: 500;
+  /*width:1423px;*/
+  width:100%;
+  height:200px;
+}
+
+.container-fluid{
+  overflow-x: hidden; 
+}
+
+.modal-header{
+  border-bottom: 0 none;
+}
+
+.modal-dialog{
+  max-width:100% !important;
+  width:1300px;
+  height:600px;
+  display: inline-block;
+}
+
+.modal-footer{
+  justify-content: flex-start;
+}
+
+.img_bg {
+  background-color:transparent;
+}
+
+.myVideo { 
+  position:absolute;
+  min-width: 95%; 
+  min-height: 80%;
+  height: 650px;
+  width: 888px;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.logo_video{
+  position: absolute;
+  background: transparent;
+  color: #7a6969;
+  width: 50%;
+  padding: 20px;
+  margin-top:280px;
+  opacity: 0; 
+}
+
+#imgCarousel{
+  height:60%;
+  width:68%;
+}
+
+#imgCarouselText{
+  height:75%;
+  width:63%;
+}
+
+#imgCarousel2{
+  height:50%;
+  width:50%;
+}
+
+.company_text_bg {
+  background-color: white;
+  text-align: right;
+  padding-top: 150px;
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 650px;
+  width: 705px;
+}
+
+#companyProfileText.carousel-item{
+  height:100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height:100%;
+}
+
+.topnav {
+  text-align: center;
+}
+
+.topnav a{
+  float: center;
+  display: inline;
+  color: #7a6969;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.icon {
+  display: none;
+  color:#7a6969;
+}
+
+.company_socmed_icon{
+  max-width:5%;
+  max-height:5%;
+  width:100%;
+  height:100%;
+  transition: transform .3s;
+}
+
+.company_socmed_icon:hover{
+  transform: scale(1.3);
+}
+
+.profile_socmed_icon{
+  max-width:3%;
+  max-height:5%;
+  width:100%;
+  height:100%;
+  transition: transform .3s;
+}
+
+.profile_socmed_icon:hover{
+  transform: scale(1.3);
+}
+
+.company_left{
+  color: #7a6969;
+}
+
+.gallery_bg{
+  padding-top: 250px;
+}
+
+.here_bg{
+  padding-top: 100px;
+}
+
+.largeable_img{
+  width:600px;
+  text-align:center;
+  display:block;
+}
+
+.text_gallery_bg{
+  color: #7a6969;
+  padding-top: 50px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.img_gallery_opt{
+  width:15%;
+  height:10%;
+  object-fit: contain;
+  opacity:0s;
+  cursor:pointer;
+  transition-delay:2s;
+  transition: opacity 1s ease-out;
+}
+
+.gallery_show_img{
+  height: 312px;
+  cursor: zoom-in;
+}
+
+.gallery_box{
+  margin-bottom: 10px; 
+  text-align:center;
+  display:block;
+}
+
+.gallery_box_img{
+  cursor:pointer;
+  height:91px;
+  width:80%;
+  float:left;
+  transition: transform .3s;
+}
+
+.gallery_opt{
+  position:fixed;
+  margin-left:49%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:55%;
+  margin-right:15px;
+}
+
+.gallery_box_img:hover{
+  transform: scale(1.15);
+}
+
+.gallery_desc{
+  color: #7a6969;
+}
+
+#product_body{
+  padding-top:175px;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+#service{
+  border:1px solid black;
+}
+
+#productDescRow{
+  border-left:2px solid #f4a669;
+  margin-left:5px;
+}
+
+.menuProduct{
+  height:auto;
+  cursor: pointer;
+  color:#d43226;
+  font-weight: bold;
+  font-family: 'neumannregular';
+  border-right:1px solid #d43226;
+}
+
+#content_service{
+  padding-left: 80px;
+  padding-right: 80px;
+  color: #7a6969;
+}
+
+.container_vision{
+  overflow-x:hidden;
+  overflow-y:hidden;
+  width:600px;
+}
+
+.container_solution{
+  overflow-x:hidden;
+  overflow-y:hidden;
+  width:1000px;
+}
+
+.container_subOption{
+  overflow-x:hidden;
+  overflow-y:hidden;
+  width:722px;
+  padding-top:2%;
+}
+
+#inside_box, #inside_box_solution, #inside_box_subOption{
+    width:auto;
+    display:inline-flex;
+}
+
+#template_submenu{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#template_submenu ul {
+  list-style-type: none;
+}
+
+#template_submenu ul li{
+  padding: 2px;
+  padding-left: 5px;
+  margin-bottom:2px;
+  border: 1px solid #d43226;
+  background-color:#d43226;
+  border-radius: 25px;
+  color:white;
+}
+
+.contentBlock{
+  font-size:10;
+  text-align:center;
+  height:auto;
+  padding-left:5px;
+  width:140px;
+  margin:10px;
+  float:left;
+  cursor: pointer;
+  font-family: 'neumannregular';
+  color:#d43226;
+}
+
+.service_popup_img{
+  font-family: 'neumannregular';
+  color:#d43226;
+}
+
+.brandGallery_menu{
+  font-family: 'neumannregular';
+  font-weight: bold;
+  color:#d43226;
+  height:50px;
+  padding:5px;
+  cursor:pointer;
+}
+
+.brandGallery_menu:hover{
+  font-size:120%;
+  transition:0.3s;
+}
+
+.contentBlock_solution {
+  font-size:10;
+  text-align:center;
+  height:auto;
+  padding-left:5px;
+  width:160px;
+  margin:10px;
+  float:left;
+  cursor: pointer;
+  font-family: 'neumannregular';
+  color:#d43226;
+}
+
+.division_desc{
+  padding-left:30%;
+  padding-right:30%;
+}
+
+#detailProduct_modal .product_desc{
+  overflow-y:scroll;
+  height:280px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  color: #7a6969;
+  font-size:100%;
+  padding-bottom: 2px;
+  border-bottom:1px solid #f4a669;
+}
+
+.product_desc li{
+  padding-left: 1.28571429em;
+  text-indent: -1.28571429em;
+}
+
+.product_table{
+  height:350px;
+  overflow-y:scroll;
+}
+
+.product_table img:hover{
+  cursor: zoom-in;
+}
+
+/*::-webkit-scrollbar {
+  width: 0px;
+}*/
+
+.imgProduct{
+  cursor: pointer;
+  transition: transform .3s;
+  border-bottom:1px solid #f4a669;
+}
+
+.imgProduct:hover{
+  transform: scale(1.1);
+}
+
+.product_image_chosen{
+  height: 280px;
+}
+
+#carouselProdukImage .carousel-inner{
+  height:60%;
+  width:60%;
+  left:20%;
+}
+
+.service_image{
+  width:100%;
+  height:100%;
+}
+
+.service_image_popup{
+  width:40%;
+  height: 40%;
+}
+
+.carousel_prev img, .carousel_next img{
+  width: 30%;
+}
+
+.carousel_prev:hover, .carousel_next:hover{
+  transition: 0.3s;
+  opacity:80%;
+}
+
+.horizon-prev, .horizon-next{
+  padding-top: 13%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.solution_horizon-prev, .solution_horizon-next{
+  padding-top: 2%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.horizon-prev img, .horizon-next img, .solution_horizon-prev img, .solution_horizon-next img{
+  width: 80%;
+}
+
+#contact_body{
+  padding-top:210px;
+  margin-left:50px;
+  margin-right:50px;
+  margin-bottom:80px;
+}
+
+input#contact_name, input#contact_email, input#contact_no, textarea#contact_message {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  border-color:#f4a669;
+  background-color: transparent;
+  color: #7a6969;
+}
+
+input#contact_name:focus, input#contact_email:focus, input#contact_no:focus, textarea#contact_message:focus {
+  /*outline:none !important;
+  outline-width: 0 !important;
+  /*box-shadow: none;*/
+  box-shadow: 0 0 0px#f4a669;
+  border-color:#d43226;
+  /*-moz-box-shadow: none;
+  -webkit-box-shadow: none;*/
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;  
+}
+::-moz-placeholder {
+  font-style: italic;  
+}
+:-ms-input-placeholder {  
+  font-style: italic; 
+}
+
+.btn_email{
+  border:1px solid #f4a669;
+  background-color:transparent;
+  color: #7a6969;
+  font-family: 'neumannregular';
+}
+
+.btn_email:hover{
+  border:1px solid transparent;
+  background-color:#f4a669;
+  color: white;
+}
+
+.map {
+  height: 400px;
+  width: 100%;
+  padding:2px;
+}
+
+footer{
+  background-color:#d43226;
+  color:white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footerText{
+  color:#f4a669;
+  font-size:80%;
+  font-family: 'neumannregular';
+}
+
+@media screen and (min-width: 1900px) { /* large screen pc */
+  #company_body{
+    padding-top:120px;
+  }
+
+  .homepageVideo { 
+    position:absolute;
+    min-width: 95%; 
+    min-height: 80%;
+    height: 90%;
+    width: 888px;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .text_bg {
+    color: #7a6969;
+    background-color: white;
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 956px;
+    width: 100%;
+    /*font-family: 'neumannregular';*/
+  }
+
+  .line_separator{
+    padding-left:100px;
+    padding-right:70px;
+  }
+
+  #gallery_modal, #service_modal{
+    position:fixed;
+    float: left;
+    left: 61%;
+    top: 60%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 100% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  .imgBigBackground{
+    height:100%;
+  }
+
+  .product_modal{
+    position:fixed;
+    float: left;
+    left: 61%;
+    top: 60%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 100% !important;
+    transform: translate(-45%, -48%);
+  }
+
+  .product_gallery .row{
+    overflow-y:scroll;
+    height:280px;
+    padding-right:2px;
+    margin-top:15px;
+  }
+
+  #subOption_modal, .productGallery_modal{
+    position:fixed;
+    float: left;
+    left: 61%;
+    top: 53%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 100% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  #detailProduct_modal{
+    position:fixed;
+    float: left;
+    left: 61%;
+    top: 39%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 100% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  #detailProduct_modal .modal-content{
+    height: 150%;
+  }
+
+  .productGallery2_modal{
+    position:fixed;
+    float: left;
+    left: 61%;
+    top: 40%;
+    bottom: 50%;
+    height: 98% !important;
+    width: 100% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  .bigBackground {
+    transform: translate(-55%, -46%);
+    width:90%;
+    height:90%;
+    top:45%; 
+    left:55%;
+    text-align:center;
+  }
+
+  .zoomInBackground, .productZoomInBackground {
+    transform: translate(-55%, -46%); /*25% 10% */
+    width:90%;
+    height:90%;
+    top:45%; 
+    left:55%;
+    text-align:center;
+  }
+
+  .division_list{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:450px;
+  }
+
+  #carouselProdukGalleryImage .carousel-item img{
+    height:30%;
+    width:30%;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1800px) { /* macbook 13 inch */
+  #company_body{
+    padding-top:120px;
+  }
+
+  .homepageVideo { 
+    position:absolute;
+    min-width: 95%; 
+    min-height: 80%;
+    height: 90%;
+    width: 730px;
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .text_bg {
+    color: #7a6969;
+    background-color: white;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 956px;
+    width: 100%;
+    /*font-family: 'neumannregular';*/
+  }
+
+  .line_separator{
+    padding-left:50px;
+    padding-right:20px;
+  }
+
+  .company_left{
+    margin-left:40px;
+  }
+
+  #gallery_modal{
+    position:fixed;
+    float: left;
+    left: 50%;
+    top: 58%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 100% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  #service_modal{
+    position:fixed;
+    float: left;
+    left: 47%;
+    top: 52%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 95% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  .product_modal{
+    position:fixed;
+    float: left;
+    left: 47%;
+    top: 52%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 95% !important;
+    transform: translate(-45%, -48%);
+  }
+
+  .productGallery_modal{
+    position:fixed;
+    float: left;
+    left: 47%;
+    top: 50%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 95% !important;
+    transform: translate(-45%, -40%);
+  }
+
+  .productGallery2_modal{
+    position:fixed;
+    float: left;
+    left: 61%;
+    top: 40%;
+    bottom: 50%;
+    height: 98% !important;
+    width: 100% !important;
+    transform: translate(-57%, -42%);
+  }
+
+  #subOption_modal{
+    position:fixed;
+    float: left;
+    left: 47%;
+    top: 50%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 95% !important;
+    transform: translate(-45%, -45%);
+  }
+
+  #detailProduct_modal{
+    position:fixed;
+    float: left;
+    left: 45%;
+    top: 39%;
+    bottom: 50%;
+    height: 100% !important;
+    width: 91% !important;
+    transform: translate(-45%, -41%);
+  }
+
+  .product_gallery .row{
+    overflow-y:scroll;
+    height:280px;
+    padding-right:2px;
+    margin-top:12px;
+  }
+
+  #detailProduct_modal .modal-content{
+    height: 128%;
+  }
+
+  .bigBackground {
+    transform: translate(-55%, -46%);
+    width:90%;
+    height:90%;
+    top:45%; 
+    left:55%;
+    text-align:center;
+  }
+
+  .imgBigBackground{
+    height:100%;
+  }
+
+  .zoomInBackground, .productZoomInBackground {
+    transform: translate(-55%, -46%); /*25% 10% */
+    width:90%;
+    height:90%;
+    top:45%; 
+    left:55%;
+    text-align:center;
+  }
+
+  .imgZoomBackground{
+    height: 85%;
+    width: 85%;
+  }
+
+  .division_list{
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:450px;
+  }
+
+  #carouselProdukGalleryImage .carousel-item img{
+    height:30%;
+    width:30%;
+  }
+}
+
+@media screen and (max-width: 600px) { /* device iphone */
+  nav {
+    background-color:white;
+    position:fixed;
+    z-index: 100;
+    width:373px;
+    height:154px;
+  }
+
+  #home_body{
+    margin-top:100px;
+  }
+
+.topnav a{display: none;}
+.icon {
+    float: left;
+    display: block;
+}
+
+.topnav.responsive {
+    position: relative;
+}
+.topnav.responsive a {
+    display: block;
+    color:#7a6969;
+    font-size: 12px;
+}
+
+.topnav.responsive a.active {
+  background-image: none;
+  display: block;
+  color:#7a6969;
+}
+
+#content_service{
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #7a6969;
+}
+
+.text_bg {
+    color: #7a6969;
+    padding-top: 0px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    font-size: 12px;
+    margin-top: 300px;
+}
+
+.topnav.responsive a.active{
+  background-image:"";
+  color:"";
+  background-size:"";
+}
+
+#company_body{
+  padding-top:0px;
+}
+
+.company_text_bg {
+  margin-top:75px;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left:50px;
+  width: auto;
+  text-align:right;
+  font-size: 12px;
+}
+
+.myVideo { 
+    position: absolute;
+    min-width: 100%; 
+    min-height: 100%;
+    width: 356px;
+    height: 251px; 
+    z-index: -100;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.homepageVideo { 
+  position: absolute;
+  min-width: 100%; 
+  min-height: 100%;
+  width: 356px;
+  height: 348px;
+  z-index: -100;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom:30px;
+}
+
+.logo_video{
+  position: absolute;
+  background: transparent;
+  width: 50%;
+  padding: 20px;
+  margin-top:100px;
+  opacity: 0; 
+}
+
+.company_socmed_icon{
+  max-width:10%;
+  max-height:10%;
+  width:auto;
+  height:auto;
+  transition: transform .3s;
+}
+
+.line_separator{
+  display:none;
+}
+
+.here_bg{
+  padding-top: 30px;
+}
+
+#imgCarousel{
+  height:100%;
+  width:100%;
+}
+
+#imgCarouselText{
+  height:100%;
+  width:100%;
+}
+
+#imgCarousel2{
+  height:100%;
+  width:80%;
+}
+
+.text_gallery_bg{
+  color: #7a6969;
+  padding-top: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.img_gallery_opt{
+  width:30%;
+  height:10%;
+  object-fit: contain;
+}
+
+.text_gallery_bg{
+  color: #7a6969;
+  font-size: 14px;
+  padding: 10px 20px 5px 20px;
+}
+
+#gallery_modal, .product_modal, #subOption_modal{
+  position:fixed;
+  float: left;
+  left: 49%;
+  top: 50%;
+  bottom: 50%;
+  height: 100% !important;
+  width: 100% !important;
+  transform: translate(-48%, -40%);
+}
+
+.productGallery_modal, #service_modal, .productGallery2_modal, #detailProduct_modal{
+  position:fixed;
+  float: left;
+  left: 50%;
+  top: 50%;
+  bottom: 50%;
+  height: 124% !important;
+  width: 100% !important;
+  transform: translate(-49%, -39%);
+}
+
+#detailProduct_modal .modal-body{
+  height:650px;
+}
+
+.productGallery_modal .modal-content, #service_modal .modal-content{
+  height: 128%;
+}
+
+.productGallery2_modal .modal-content{
+  height: 128%;
+}
+
+.modal-dialog{
+  max-width:100% !important;
+  width:350px;
+  height:600px;
+  display: inline-block;
+}
+
+.modal-body{
+  height:500px;
+}
+
+.gallery_show_img{
+  width:38%;
+  height: 50%;
+  cursor: zoom-in;
+}
+
+.gallery_opt{
+  position:fixed;
+  margin-left:5%;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:64%;
+  margin-right:15px;
+  margin-top: 233px;
+  display:inline;
+}
+
+.gallery_box{
+  padding: 1px;
+  margin-bottom: 10px;
+  width:48%; 
+}
+
+.gallery_box_img{
+  cursor:pointer;
+  height:91px;
+  float:left;
+  transition: transform .3s;
+}
+
+.largeable_img{
+  border-right:none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width:120%;
+  text-align:left;
+}
+
+.map {
+  height: 200px;
+}
+
+#product_body{
+  padding-top:150px;
+}
+
+.division_brand{
+  overflow-y:scroll;
+  height:150px;
+  margin-top:15px;
+}
+
+.container_subOption{
+  width:230px;
+  padding-top:5%;
+}
+
+#template_submenu{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#template_submenu ul li{
+  padding-left: 3px;
+  margin-bottom:2px;
+  border: 1px solid #d43226;
+  background-color:#d43226;
+  border-radius: 25px;
+  color:white;
+}
+
+.brandGallery_menu{
+  font-family: 'neumannregular';
+  font-weight: bold;
+  color:#d43226;
+  height:50px;
+  padding-top:10px;
+  padding-bottom:10px;
+  cursor:pointer;
+}
+
+#carouselProdukImage .carousel-inner{
+  height:220px;
+}
+
+.product_image_chosen{
+  height: 100px;
+  margin-bottom:15px;
+}
+
+.division_desc{
+  overflow-y:scroll;
+  height:240px;
+}
+
+.product_gallery .row{
+  display:none;
+}
+
+.service_popup_text{
+  overflow-y:scroll;
+  height:415px;
+  margin-bottom: 20px;
+}
+
+#contact_body{
+  padding-top:150px;
+}
+
+.horizon-prev, .horizon-next{
+  padding-top: 45%;
+}
+
+.horizon-prev img, .horizon-next img{
+  width:50%;
+}
+
+.solution_horizon-prev, .solution_horizon-next{
+  padding-top: 12%;
+}
+
+.container_vision, .container_solution{
+  width:205px;
+}
+
+#productDescRow{
+  border-left:none;
+  margin-left:5px;
+  margin-top:26%;
+}
+
+#detailProduct_modal .product_desc{
+  overflow-y:scroll;
+  height:170px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  color: #7a6969;
+  font-size:120%;
+}
+
+.division_list{
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 27px;
+  border-top: 2px solid #f4a669;
+}
+
+.productGallery2_modal .division_list{
+  overflow-y:scroll;
+  overflow-x:hidden;
+  height:210px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 148px;
+  border-top: 2px solid #f4a669;
+}
+
+.division_show{
+  height: 300px;
+}
+
+#carouselProdukGalleryImage .carousel-item img{
+  height:50%;
+  width:50%;
+}
+
+.bigBackground {
+  transform: translate(-55%, -13%); /*25% 10% */
+  height:85% !important;
+  width:95% !important;
+  top:20%; 
+  left:55%;
+  overflow:scroll;
+  text-align:center;
+}
+
+.imgBigBackground {
+  height:inherit;
+}
+
+.zoomInBackground, .productZoomInBackground {
+  transform: translate(-55%, -46%); /*25% 10% */
+  width:90%;
+  height:90%;
+  top:65%; 
+  left:55%;
+  text-align:center;
+  overflow:scroll;
+}
+
+footer{
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.footerText{
+  color:#f4a669;
+  font-size:120%;
+  font-family: 'neumannregular';
+}
+
+}
