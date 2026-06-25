@@ -37,5 +37,134 @@
     <script src="{{ asset('/js/service.js') }}"></script>
     <script src="{{ asset('/js/product.js') }}"></script>
     
-    <title>Diana Glass</title>
+    <title>Diana Glass - Leading Providers Glass</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.dianaglass.com/#business",
+        "name": "Diana Glass",
+        "url": "https://www.dianaglass.com/",
+        "logo": "https://www.dianaglass.com/assets/images/logo.png",
+        "image": "https://www.dianaglass.com/assets/images/og-image.jpg",
+        "description": "Professional glass installation services for residential, commercial, and architectural projects, including tempered glass, laminated glass, frameless glass doors, glass partitions, shower enclosures, glass railings, canopies, and building facades.",
+        "parentOrganization": {
+            "@type": "Organization",
+            "@id": "https://www.sannoglass.com/#organization",
+            "name": "PT SANNO",
+            "url": "https://www.sannoglass.com/"
+        },
+        "telephone": "+6285397277930",
+        "email": "retail@dianaflatglass.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Sulawesi No.289, Butung, Kec. Wajo",
+            "addressLocality": "Makassar",
+            "addressRegion": "South Sulawesi",
+            "postalCode": "90164",
+            "addressCountry": "ID"
+        },
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "knowsAbout": [
+            "Glass Installation",
+            "Tempered Glass",
+            "Frameless Glass Doors",
+            "Glass Partitions",
+            "Shower Screens",
+            "Glass Balustrades",
+            "Architectural Glass",
+            "Commercial Glass Installation",
+            "Residential Glass Installation",
+            "Custom Glass Solutions"
+        ],
+        "sameAs": [
+            "https://www.instagram.com/diana.flatglass",
+            "https://www.facebook.com/dianaglasspages"
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.dianaglass.com/#service",
+        "name": "Glass Installation Services",
+        "serviceType": "Professional Glass Installation",
+        "provider": {
+            "@id": "https://www.dianaglass.com/#business"
+        },
+        "description": "Professional glass installation services for residential, commercial, and architectural projects, including tempered glass, laminated glass, frameless glass doors, glass partitions, shower enclosures, glass railings, canopies, and building facades.",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Indonesia"
+        },
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Residential, Commercial, and Architectural Projects"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context":"https://schema.org",
+        "@type":"WebSite",
+        "@id":"https://www.dianaglass.com/#website",
+        "url":"https://www.dianaglass.com/",
+        "name":"Diana Glass",
+        "publisher":{
+            "@id":"https://www.dianaglass.com/#business"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+            "@type": "Question",
+            "name": "What services does Diana Glass provide?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Diana Glass specializes in professional glass installation services for residential and commercial projects, including tempered glass, laminated glass, shower enclosures, glass railings, glass partitions, canopies, and building facades."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Does Diana Glass offer site surveys?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Our team can conduct on-site surveys, take accurate measurements, and recommend the most suitable glass solutions for your project requirements."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How can I request a quotation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can send us your drawings, dimensions, specifications, or project details through our contact form, email, or WhatsApp. Our team will provide a customized quotation based on your requirements."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "Do you provide professional installation?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. All installations are performed by experienced professionals following industry standards."
+            }
+            },
+            {
+            "@type": "Question",
+            "name": "How do I get started with Diana Glass?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Contact our team with your project details. We will guide you through consultation, site survey, quotation, production, and installation."
+            }
+            }
+        ]
+    }
+    </script>
 </head>
