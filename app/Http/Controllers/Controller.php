@@ -95,8 +95,8 @@ class Controller extends BaseController
         $messageContent = json_encode($contents['message']);
         //return view('mail', compact('email', 'name', 'phone', 'message'));
         \Mail::send("mail", array("name" => $name, "phone" => $phone, "messageContent" => $messageContent, "email" => $email), function ($message) use ($name, $phone) {
-            $message->to("robgos04@gmail.com"); //dewi@dianaflatglass.com
-            $message->subject('New Message From Your Website ('.$name.' - '.$phone.')');
+            $message->to("sosmed@dianaflatglass.com"); //dewi@dianaflatglass.com
+            $message->subject('New Message From Dianaflatglass website ('.$name.' - '.$phone.')');
         });
     }
 }
