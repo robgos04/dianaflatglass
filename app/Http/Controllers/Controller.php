@@ -7,6 +7,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller as BaseController;
+use App\Models\Project;
 
 class Controller extends BaseController
 {
@@ -14,23 +15,42 @@ class Controller extends BaseController
     CONST GALLERY_PHOTO_FOLDER = '/Applications/XAMPP/xamppfiles/htdocs/diana/public/images/gallery';
 
     public function showHome(){
-        $residence = "[]";
-        $building = "[]";
-        $retail = "[]";
-        if(is_file(public_path('galleryArray/residence_gallery.txt'))){
-            $residence = file_get_contents(public_path("galleryArray/residence_gallery.txt"));
-        }
-        if(is_file(public_path('galleryArray/building_gallery.txt'))){
-            $building = file_get_contents(public_path("galleryArray/building_gallery.txt"));
-        }
-        if(is_file(public_path('galleryArray/retail_gallery.txt'))){
-            $retail = file_get_contents(public_path("galleryArray/retail_gallery.txt"));
-        }
-        return view('welcome', compact('residence','building', 'retail'));
+        $latestExterior = Project::where('category','exterior')->latest()->first();
+        $latestInterior = Project::where('category','interior')->latest()->first();
+        $latestAluminium = Project::where('category','aluminium')->latest()->first();
+        return view('welcome', compact('latestExterior', 'latestInterior', 'latestAluminium'));
+    }
+
+    public function showProduct(){
+        return view('product');
+    }
+
+    public function showProject(){
+        return view('project');
     }
 
     public function showForm(){
         return view('form');
+    }
+
+    public function showCareer(){
+        return view('career');
+    }
+
+    public function showDisclaimer(){
+        return view('disclaimer');
+    }
+
+    public function showTerms(){
+        return view('termsofuse');
+    }
+
+    public function showPrivacy(){
+        return view('privacy');
+    }
+
+    public function showContact(){
+        return view('contactus');
     }
 
     public function inputImageGallery(Request $request){
