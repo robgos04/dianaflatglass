@@ -574,27 +574,27 @@
                     <div class="col-md-6 col-sm-6 product_right">
                         <!-- Panel 1 -->
                         <div class="product-panel active" data-panel="1">
-                            <img src="{{ asset('/images/product_exterior.png') }}" class="product-main-img">
+                            <img src="{{ asset('/images/product_exterior.png') }}" class="product-main-img" loading="lazy">
                             <p class="product-right-desc">Clear, Tinted Glass, Tempered (Safety) Glass, Laminated Glass, Insulated Glass, and more, we deliver customized solutions that combine strength, style, and functionality for any building.</p>
                         </div>
                         <!-- Panel 2 -->
                         <div class="product-panel" data-panel="2">
-                            <img src="{{ asset('/images/product_interior.png') }}" class="product-main-img">
+                            <img src="{{ asset('/images/product_interior.png') }}" class="product-main-img" loading="lazy">
                             <p class="product-right-desc">Mirror, Coated Glass, Frosted, Patterned, and other modern interior options, we provide versatile glass solutions to bring every design vision to life.</p>
                         </div>
                         <!-- Panel 3 -->
                         <div class="product-panel" data-panel="3">
-                            <img src="{{ asset('/images/product_aluminium.png') }}" class="product-main-img">
+                            <img src="{{ asset('/images/product_aluminium.png') }}" class="product-main-img" loading="lazy">
                             <p class="product-right-desc">Durable, lightweight aluminum for versatile building solutions.</p>
                         </div>
                         <!-- Panel 4 -->
                         <div class="product-panel" data-panel="4">
-                            <img src="{{ asset('/images/product_accessories.png') }}" class="product-main-img">
+                            <img src="{{ asset('/images/product_accessories.png') }}" class="product-main-img" loading="lazy">
                             <p class="product-right-desc">Accessories for glass and aluminum with minimalist design.</p>
                         </div>
                         <!-- Panel 5 -->
                         <div class="product-panel" data-panel="5">
-                            <img src="{{ asset('/images/product_survey.png') }}" class="product-main-img">
+                            <img src="{{ asset('/images/product_survey.png') }}" class="product-main-img" loading="lazy">
                             <p class="product-right-desc">Accurate surveys for flawless project execution.</p>
                         </div>
                     </div>
@@ -689,37 +689,37 @@
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>PT. Sanno</h4>
-                            <img src="{{ asset('/images/partners/sanno.svg') }}" alt="PT. Sanno" />
+                            <img src="{{ asset('/images/partners/sanno.svg') }}" alt="PT. Sanno" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>Allure Industries</h4>
-                            <img src="{{ asset('/images/partners/allure.svg') }}" alt="Allure Industries" />
+                            <img src="{{ asset('/images/partners/allure.svg') }}" alt="Allure Industries" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>Asahimas</h4>
-                            <img src="{{ asset('/images/partners/asahimas.svg') }}" alt="Asahimas" />
+                            <img src="{{ asset('/images/partners/asahimas.svg') }}" alt="Asahimas" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>Xinyi Glass</h4>
-                            <img src="{{ asset('/images/partners/xinyi_glass.svg') }}" alt="Xinyi Glass" />
+                            <img src="{{ asset('/images/partners/xinyi_glass.svg') }}" alt="Xinyi Glass" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>Omge Hardware</h4>
-                            <img src="{{ asset('/images/partners/omge.svg') }}" alt="Omge Hardware" />
+                            <img src="{{ asset('/images/partners/omge.svg') }}" alt="Omge Hardware" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>DormaKaba</h4>
-                            <img src="{{ asset('/images/partners/dormakaba.svg') }}" alt="DormaKaba" />
+                            <img src="{{ asset('/images/partners/dormakaba.svg') }}" alt="DormaKaba" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
                             <h4>Dekson</h4>
-                            <img src="{{ asset('/images/partners/dekson.svg') }}" alt="Dekson" />
+                            <img src="{{ asset('/images/partners/dekson.svg') }}" alt="Dekson" loading="lazy"/>
                         </div>
 
                     </div> 

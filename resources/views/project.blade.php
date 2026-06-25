@@ -304,7 +304,7 @@
                     @endphp
                     @forelse($interiorProjects as $project)
                     <div class="project-sanno">
-                        <img src="{{ asset('images/projects/' . $project->projectpic) }}" alt="{{ $project->projectname }}">
+                        <img src="{{ asset('images/projects/' . $project->projectpic) }}" alt="{{ $project->projectname }}" loading="lazy">
                         
                         {{-- Coming Soon badge on the latest project --}}
                         @if($project->id === $smallestIdInterior)
@@ -327,7 +327,7 @@
                 <div class="{{ $chunk['size'] === 2 ? 'aluminium-row-2' : 'aluminium-row-3' }}">
                     @foreach($chunk['items'] as $project)
                     <div class="project-sanno">
-                        <img src="{{ asset('images/projects/' . $project->projectpic) }}" alt="{{ $project->projectname }}">
+                        <img src="{{ asset('images/projects/' . $project->projectpic) }}" alt="{{ $project->projectname }}" loading="lazy">
                         
                         {{-- Coming Soon badge on the latest project --}}
                         @if($project->id === $smallestIdAluminium)
