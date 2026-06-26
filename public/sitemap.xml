@@ -1,0 +1,71 @@
+sitemap.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/disclaimer</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/career</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/projects</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/terms-of-use</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/contact-us</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/privacy-policy</loc>
+    <lastmod>2026-06-26</lastmod>
+  </url>
+
+</urlset>
+
+sitemap-images.xml
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.dianaflatglass.co.id/projects</loc>
+    <image:image>
+      <image:loc>https://www.dianaflatglass.co.id/assets/images/project/interior-glass-office.webp</image:loc>
+      <image:title>Interior Glass Installation</image:title>
+      <image:caption>Professional interior glass installation by Diana Glass.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.dianaflatglass.co.id/assets/images/project/exterior-glass-building.webp</image:loc>
+      <image:title>Exterior Glass Installation</image:title>
+      <image:caption>Exterior architectural glass installation for commercial buildings.</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>https://www.dianaflatglass.co.id/assets/images/project/aluminium-system.webp</image:loc>
+      <image:title>Aluminium System Installation</image:title>
+      <image:caption>Aluminium system integrated with modern glass solutions.</image:caption>
+    </image:image>
+
+  </url>
+</urlset>

@@ -19,7 +19,7 @@ Route::post('/inputGallery','Controller@inputImageGallery')->name('input.imageGa
 Route::get('/sendMail','Controller@sendEmail')->name('send.email');
 
 // Public page
-Route::get('/project', [App\Http\Controllers\ProjectController::class, 'showProject'])->name('show.project');
+Route::get('/projects', [App\Http\Controllers\ProjectController::class, 'showProject'])->name('show.project');
 Route::get('/career', [App\Http\Controllers\Controller::class, 'showCareer'])->name('show.career');
 Route::get('/disclaimer', [App\Http\Controllers\Controller::class, 'showDisclaimer'])->name('show.disclaimer');
 Route::get('/terms-of-use', [App\Http\Controllers\Controller::class, 'showTerms'])->name('show.terms');

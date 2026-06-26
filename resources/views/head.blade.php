@@ -1,6 +1,8 @@
 <head>
+    <title>Diana Glass - Professional Glass Contractor & Installation Services</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Diana Glass is a professional glass contractor and provider of glass installation services for residential, commercial, and architectural projects, with a commitment to quality, precision, safety, and customer satisfaction.">
     <!-- Favicon - Browser -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
@@ -37,7 +39,7 @@
     <script src="{{ asset('/js/service.js') }}"></script>
     <script src="{{ asset('/js/product.js') }}"></script>
     
-    <title>Diana Glass - Leading Providers Glass</title>
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
