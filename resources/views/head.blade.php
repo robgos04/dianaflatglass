@@ -42,11 +42,11 @@
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "@id": "https://www.dianaglass.com/#business",
+        "@id": "https://www.dianaflatglass.co.id/#business",
         "name": "Diana Glass",
-        "url": "https://www.dianaglass.com/",
-        "logo": "https://www.dianaglass.com/assets/images/logo.png",
-        "image": "https://www.dianaglass.com/assets/images/og-image.jpg",
+        "url": "https://www.dianaflatglass.co.id/",
+        "logo": "https://www.dianaflatglass.co.id/assets/images/logo.png",
+        "image": "https://www.dianaflatglass.co.id/assets/images/og-image.jpg",
         "description": "Professional glass installation services for residential, commercial, and architectural projects, including tempered glass, laminated glass, frameless glass doors, glass partitions, shower enclosures, glass railings, canopies, and building facades.",
         "parentOrganization": {
             "@type": "Organization",
@@ -55,7 +55,7 @@
             "url": "https://www.sannoglass.com/"
         },
         "telephone": "+6285397277930",
-        "email": "retail@dianaflatglass.com",
+        "email": "info@dianaflatglass.com",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Jl. Sulawesi No.289, Butung, Kec. Wajo",
@@ -90,11 +90,11 @@
     {
         "@context": "https://schema.org",
         "@type": "Service",
-        "@id": "https://www.dianaglass.com/#service",
+        "@id": "https://www.dianaflatglass.co.id/#service",
         "name": "Glass Installation Services",
         "serviceType": "Professional Glass Installation",
         "provider": {
-            "@id": "https://www.dianaglass.com/#business"
+            "@id": "https://www.dianaflatglass.co.id/#business"
         },
         "description": "Professional glass installation services for residential, commercial, and architectural projects, including tempered glass, laminated glass, frameless glass doors, glass partitions, shower enclosures, glass railings, canopies, and building facades.",
         "areaServed": {
@@ -111,11 +111,11 @@
     {
         "@context":"https://schema.org",
         "@type":"WebSite",
-        "@id":"https://www.dianaglass.com/#website",
-        "url":"https://www.dianaglass.com/",
+        "@id":"https://www.dianaflatglass.co.id/#website",
+        "url":"https://www.dianaflatglass.co.id/",
         "name":"Diana Glass",
         "publisher":{
-            "@id":"https://www.dianaglass.com/#business"
+            "@id":"https://www.dianaflatglass.co.id/#business"
         }
     }
     </script>
