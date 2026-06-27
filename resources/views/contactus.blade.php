@@ -43,7 +43,7 @@
 
     .contactus_cta {
         font-size: 20px;
-        font-family: 'Asen Pro', sans-serif;
+        font-family: 'Inter', sans-serif;
         background-color: #C83D2A;
         color: #ffffff !important;
         border: 1px solid #ffffff;
@@ -81,6 +81,7 @@
         input#contact_name, textarea#contact_message { padding: 2% 1% 2% 2% !important; }
     }
     @media screen and (min-width: 1900px) {
+        .general-list { margin: 2% 15% 15% 16%; }
         .project-top { height: 300px; }
         .project-top h1 { margin-left: 0; }
     }
@@ -126,7 +127,7 @@
             <div class="row">    
                 <div class="d-flex align-items-center gap-4">
                     <button type="submit" class="btn_email contactus_cta" style="cursor:pointer;">
-                        Send Message <i class="ri-arrow-right-circle-line"></i>
+                        Send Message <i class="ri-arrow-right-long-line"></i>
                     </button>
                 </div>
             </div>

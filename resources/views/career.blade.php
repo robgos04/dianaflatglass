@@ -44,6 +44,7 @@
     @media screen and (min-width: 1900px) {
         .project-top { height: 300px; }
         .project-top h1 { margin-left: 0; }
+        .general-list { margin: 2% 5% 15% 16%; }
     }
     </style>
     <body>
@@ -73,11 +74,11 @@
             <section class="cta-section">
                 <div class="container">
                     <div class="row align-items-center">
-                    <div class="col-12 col-md-7">
-                        <h2>Modern Spaces with Glass</h2>
-                        <p>Clean glass designs create a modern look while making your space feel brighter, wider, and more elegant.</p>
+                    <div class="col-12 col-md-12">
+                        <h2>Enhance Your Home with Modern Glass Solutions</h2>
+                        <p>Transform your home with premium glass solutions that bring more natural light,<br>openness, and timeless elegance.</p>
                         <div class="sanno_cta">
-                            <a href="{{ route('show.contact') }}">Contact Us <i class="ri-arrow-right-circle-line"></i></a>
+                            <a href="{{ route('show.contact') }}">Contact Us <i class="ri-arrow-right-long-line"></i></a>
                         </div>
                     </div>
                     </div>

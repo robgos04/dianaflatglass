@@ -1,3 +1,14 @@
+<style>
+    @media screen and (min-width: 1900px) { /* large screen pc */
+        .cta-section { margin: -195px 14% 0px; }
+        .footer-main {
+                padding-left: 15%;
+                padding-right: 0%;
+            }
+        .footer-divider { margin: 14px 52% 14px 0;}
+        .footer-bottom { margin: 0px 14%; }
+    }
+</style>
 <footer>
 
         <div class="footer-main row">

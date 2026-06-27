@@ -45,7 +45,7 @@ nav#mainNav {
 }
 
 h2 {
-  font-family: 'Asen Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.7rem !important;
   font-weight: bold;
 }
@@ -324,6 +324,7 @@ body {
 
 .product-subtitle {
   font-size: 1rem;
+  font-family: 'Manrope', sans-serif;
   color: rgba(255, 255, 255, 0.85);
   margin-bottom: 40px;
   line-height: 1.6;
@@ -350,6 +351,7 @@ body {
 
 .product-right-desc {
     font-size: 0.85rem;
+    font-family: 'Manrope', sans-serif;
     color: rgba(255, 255, 255, 0.85);
     line-height: 1.6;
     margin: 0;
@@ -363,7 +365,8 @@ body {
     padding: 20px 2%;
     cursor: pointer;
     transition: opacity 0.2s ease;
-    opacity: 0.45;
+    font-family: 'Manrope', sans-serif;
+    /* opacity: 0.45; */
 }
 
 .service-item.active,
@@ -386,7 +389,7 @@ body {
 }
 
 .service-name {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
     color: #ffffff;
@@ -499,7 +502,7 @@ body {
 
 .project_content {
   padding: 5% 5% 5% 4%;
-  font-family: 'Asen Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
 }
 
@@ -600,11 +603,16 @@ h1 {
   background-size: cover;
   background-position: center;
   border-radius: 16px;
-  margin: -143px 60px 0;
+  margin: -195px 60px 0;
   padding: 60px 50px;
   color: #ffffff;
   position: relative;
   z-index: 3;
+}
+
+.cta-section p {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1rem;
 }
 
 .cta-section-page {
@@ -1072,7 +1080,7 @@ footer {
 
 .sanno_cta {
   font-size: 20px;
-  font-family: 'Asen Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #ffffff !important;
   border: 1px solid #ffffff;
   border-radius: 12px;
@@ -1117,7 +1125,7 @@ footer {
   height: auto;
   width: 100%;
   padding: 10%;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 20px;
   color: #ffffff;
   text-align: justify;

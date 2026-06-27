@@ -3,6 +3,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Diana Glass is a professional glass contractor and provider of glass installation services for residential, commercial, and architectural projects, with a commitment to quality, precision, safety, and customer satisfaction.">
+    <link rel="canonical" href="https://www.dianaflatglass.co.id/"/>
+    <link rel="canonical" href="https://www.dianaflatglass.co.id/projects"/>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Diana Glass" />
+    <meta property="og:title" content="Diana Glass - Professional Glass Contractor & Installation Services" />
+    <meta property="og:description" content="Diana Glass is a professional glass contractor and provider of glass installation services for residential, commercial, and architectural projects, with a commitment to quality, precision, safety, and customer satisfaction." />
+    <meta property="og:url" content="https://www.dianaflatglass.co.id/" />
+    <meta property="og:image" content="https://www.www.dianaflatglass.co.id/assets/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Diana Glass Professional Glass Installation Services" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Diana Glass - Professional Glass Contractor & Installation Services" />
+    <meta name="twitter:description" content="Diana Glass is a professional glass contractor and provider of glass installation services for residential, commercial, and architectural projects, with a commitment to quality, precision, safety, and customer satisfaction." />
+    <meta name="twitter:image" content="https://www.dianaflatglass.co.id/assets/images/og-image.jpg" />
+
     <!-- Favicon - Browser -->
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon-16x16.png') }}">
@@ -24,6 +41,9 @@
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">

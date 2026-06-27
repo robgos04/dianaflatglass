@@ -1,16 +1,16 @@
 <style>
 @media screen and (min-width: 1900px) {
-    .nav-inner {
-        padding: 0px 0px;
-        max-width: 92%;
-    }
+ .project-top {
+    padding-left: 17%;
+    padding-right: 15%;
+ }
 }
 </style>
 
 <!-- MENU BAR -->
 <nav id="mainNav">
     <div class="nav-inner">
-        <a href="#" class="nav-logo" onclick="$('#home_menu').click()">
+        <a href="{{ route('show.home') }}" class="nav-logo" onclick="$('#home_menu').click()">
             <img src="{{ asset('/images/diana_logo.png') }}" alt="PT. DIANA">
         </a>
         <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">

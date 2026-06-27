@@ -352,11 +352,11 @@
             <section class="cta-section">
                 <div class="container">
                     <div class="row align-items-center">
-                    <div class="col-12 col-md-7">
-                        <h2>Modern Spaces with Glass</h2>
-                        <p>Clean glass designs create a modern look while making your space feel brighter, wider, and more elegant.</p>
+                    <div class="col-12 col-md-12">
+                        <h2>Enhance Your Home with Modern Glass Solutions</h2>
+                        <p>Transform your home with premium glass solutions that bring more natural light,<br>openness, and timeless elegance.</p>
                         <div class="sanno_cta">
-                            <a href="{{ route('show.contact') }}">Contact Us <i class="ri-arrow-right-circle-line"></i></a>
+                            <a href="{{ route('show.contact') }}">Contact Us <i class="ri-arrow-right-long-line"></i></a>
                         </div>
                     </div>
                     </div>
@@ -374,11 +374,31 @@
             document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
             this.classList.add('active');
             document.getElementById('tab-' + this.dataset.tab).classList.add('active');
+
+            // Update the URL hash without triggering scroll
+            history.replaceState(null, null, '#' + this.dataset.tab);
         });
     });
 
     document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('project_menu').classList.add('active');
+
+        // Check URL hash and activate corresponding tab
+        var hash = window.location.hash.replace('#', '');
+        var validTabs = ['exterior', 'interior', 'aluminium'];
+
+        if (hash && validTabs.includes(hash)) {
+            document.querySelectorAll('.project-tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+
+            var targetTab = document.querySelector('.project-tab[data-tab="' + hash + '"]');
+            var targetPanel = document.getElementById('tab-' + hash);
+
+            if (targetTab && targetPanel) {
+                targetTab.classList.add('active');
+                targetPanel.classList.add('active');
+            }
+        }
     });
     </script>
 </html>

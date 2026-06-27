@@ -5,6 +5,7 @@
     html {
         scroll-behavior: smooth;
     }
+    #home_short_desc p { font-family: 'Manrope', sans-serif; }
     .gallery_bg{
         background-image:url("{{ asset('/images/gallery_bg_1.png') }}"), url("{{ asset('/images/gallery_bg_2.png') }}");
         background-position: left bottom, right bottom;
@@ -30,6 +31,7 @@
     }
     .sanno_left p{
         font-size: 1.3rem;
+        font-family: 'Manrope', sans-serif;
     }
     .sanno_right {
         padding-top: 7%;
@@ -133,6 +135,11 @@
         background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.72) 100%);
         color: #ffffff;
     }
+    .product-card-overlay a{
+        text-decoration: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
     .product-card-text {
         max-width: calc(100% - 48px);
     }
@@ -219,10 +226,10 @@
     #faq_body {
         position: relative;
         overflow: hidden;
-        font-family: 'Asen Pro', sans-serif;
+        font-family: 'Inter', sans-serif;
         font-size: 16px;
         color: #ffffff !important;
-        padding: 4% 0 12% 0;
+        padding: 4% 0 15% 0;
     }
 
     #faq_body::before {
@@ -366,11 +373,29 @@
         }
     }
     @media screen and (min-width: 1900px) { /* large screen pc */
-        .nav-inner {
-            padding: 0px 0px;
-            max-width: 92%;
+        .home_title {
+            padding-left: 15%;
         }
+        #home_short_desc { font-size: 20px; }
+        .sanno_content { padding:4% 10% 4% 16%; }
+        #product_body { padding:5% 16% 5% 15%; }
         .product-card img { height:800px !important; }
+        #project_body .divider {
+            width: 70% !important;
+            margin-left: 15%;
+        }
+        .project_content {
+            padding: 5% 15% 5% 15%;
+        }
+        .faq_left { padding-left: 16%; }
+        .faq_right { padding: 3% 16% 3% 3%; }
+        .footer-main {
+            padding-left: 15%;
+            padding-right: 0%;
+        }
+        .footer-divider { margin: 14px 52% 14px 0;}
+        .footer-bottom { margin: 0px 14%; }
+        .cta-section { margin: -195px 14% 0; }
     }
     </style>
     <body>
@@ -379,7 +404,7 @@
             <div class="nav-inner">
 
                 <!-- Logo -->
-                <a href="#" class="nav-logo" onclick="$('#home_menu').click()">
+                <a href="{{ route('show.home') }}" class="nav-logo" onclick="$('#home_menu').click()">
                     <img src="{{ asset('/images/diana_logo.png') }}" alt="PT. DIANA">
                 </a>
 
@@ -456,19 +481,19 @@
             <div id="home_body" class="home_title">
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
-                        <p><b>Solusi Inovatif Kebutuhan</b><br><i>Kaca</i><b> untuk Proyek Anda.</b></p>
+                        <p><b>Professional <i>Glass Installation Services</i> in South Sulawesi</b></p>
                     </div>
                     <div class="col-md-4 col-sm-4">
                     </div>     
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-sm-12" id="home_short_desc">
-                        <p>We are the leading providers of the architectural glass,<br>aluminium, and glass accessories system.</p>
+                        <p>Transforming residential, commercial, and architectural spaces with premium glass solutions.</p>
                     </div>
                     <div class="col-md-4 col-sm-4">
                         <div class="sanno_cta">
                             <a href="{{ route('show.project') }}">
-                            Explore Project <i class="ri-arrow-right-circle-line"></i>
+                            Explore Project <i class="ri-arrow-right-long-line"></i>
                             </a>
                         </div>
                     </div>
@@ -483,8 +508,8 @@
                     <div class="col-md-6 col-sm-6 about_right">
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
-                                <h2>About<br>Company</h2><br>
-                                <p><b><i>Diana Flat Glass Processing</i></b>, founded in 1985, is a leading provider of architectural glass, aluminium systems, and glass accessories. We process, supply, and install products for both residential and commercial projects.</p>
+                                <h2>About<br>Diana Glass</h2><br>
+                                <p><b><i>Diana Glass</i></b>, founded in 1985, is a leading provider of architectural glass, aluminium systems, and glass accessories. We process, supply, and install products for both residential and commercial projects.</p>
                                 <p>As the exclusive agent of Allure Industries Aluminium and the management of Glassmart Makassar, a major provider of Asahimas and Xinyi Glass, we are also an applicator of innovative architectural and interior products such as Reholz, Omge, DormaKaba, Dekson, and many more.</p>
                                 <p>Supported by an energetic and creative team, our goal is to deliver excellent products and outstanding services to our customers.</p>
                             </div>
@@ -504,7 +529,7 @@
                             </div>
                             <div class="col-md-4 col-sm-4 sanno_right">
                                 <div class="sanno_cta">
-                                    <a href="https://www.sannoglass.com/">Contact Us <i class="ri-arrow-right-circle-line"></i></a>
+                                    <a href="https://www.sannoglass.com/">Contact Us <i class="ri-arrow-right-long-line"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -517,7 +542,7 @@
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <h2>Our Product & Service</h2>
-                        <p class="product-subtitle">Our high-quality glass products not only offer strength and security,<br>but also add aesthetic value to modern Architectural Design.</p>
+                        <p class="product-subtitle">Discover premium glass products and professional installation services<br>for residential, commercial, and architectural projects.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -612,13 +637,13 @@
                     <!-- Left: Title & Description -->
                     <div class="col-md-8 col-sm-8">
                         <h2>Our Project</h2>
-                        <p class="project-subtitle">Every project we work on is carried out with high standards, quality materials, and experienced experts to ensure neat results</p>
+                        <p class="project-subtitle">Explore our Interior glass, Exterior glass, and Aluminium projects, completed with quality materials and professional workmanship.</p>
                     </div>
 
                     <!-- Right: Button -->
                     <div class="col-md-4 col-sm-4 d-flex justify-content-md-end ">
                         <div class="sanno_cta">
-                            <a href="{{ route('show.project') }}">See All Project <i class="ri-arrow-right-circle-line"></i></a>
+                            <a href="{{ route('show.project') }}">See All Project <i class="ri-arrow-right-long-line"></i></a>
                         </div>
                     </div>
 
@@ -634,8 +659,10 @@
                                     <div class="product-card-text">
                                         <h2>Exterior Glass</h2>
                                     </div>
-                                    <div class="product-card-cta ri-arrow-right-circle-line" data-lightbox-src="{{ asset('/images/projects/'.$latestExterior->projectpic) }}" data-lightbox-caption="{{ $latestExterior->projectname }}" data-lightbox-category="Exterior Glass" style="cursor:pointer;">
-                                    </div>
+                                    <a href="{{ route('show.project') }}#exterior">
+                                        <div class="product-card-cta ri-arrow-right-long-line" data-lightbox-src="{{ asset('/images/projects/'.$latestExterior->projectpic) }}" data-lightbox-caption="{{ $latestExterior->projectname }}" data-lightbox-category="Exterior Glass" style="cursor:pointer;">
+                                        </div>
+                                     </a>
                                 </div>
                             </div>
                         </div>
@@ -647,8 +674,10 @@
                                     <div class="product-card-text">
                                         <h2>Interior Glass</h2>
                                     </div>
-                                    <div class="product-card-cta ri-arrow-right-circle-line" data-lightbox-src="{{ asset('/images/projects/'.$latestInterior->projectpic) }}" data-lightbox-caption="{{ $latestInterior->projectname }}" data-lightbox-category="Interior Glass" style="cursor:pointer;">
-                                    </div>
+                                    <a href="{{ route('show.project') }}#interior">
+                                        <div class="product-card-cta ri-arrow-right-long-line" data-lightbox-src="{{ asset('/images/projects/'.$latestInterior->projectpic) }}" data-lightbox-caption="{{ $latestInterior->projectname }}" data-lightbox-category="Interior Glass" style="cursor:pointer;">
+                                        </div>
+                                     </a>
                                 </div>
                             </div>
                         </div>
@@ -660,8 +689,10 @@
                                     <div class="product-card-text">
                                         <h2>Aluminium</h2>
                                     </div>
-                                    <div class="product-card-cta ri-arrow-right-circle-line" data-lightbox-src="{{ asset('/images/projects/'.$latestAluminium->projectpic) }}" data-lightbox-caption="{{ $latestAluminium->projectname }}" data-lightbox-category="Aluminium" style="cursor:pointer;">
-                                    </div>
+                                    <a href="{{ route('show.project') }}#aluminium">
+                                        <div class="product-card-cta ri-arrow-right-long-line" data-lightbox-src="{{ asset('/images/projects/'.$latestAluminium->projectpic) }}" data-lightbox-caption="{{ $latestAluminium->projectname }}" data-lightbox-category="Aluminium" style="cursor:pointer;">
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -732,7 +763,7 @@
                 <div class="row">
                     <div class="col-md-6 col-sm-6 faq_left">
                         <h2>Frequently Asked Questions</h2>
-                        <p>Explore common questions about installation services from Diana Glass.</i></b></p>
+                        <p>Find answers to common questions about Diana Glass, our glass installation services, products, and project process.</p>
                     </div>
                     <div class="col-md-6 col-sm-6 faq_right">
                         <div class="faq-list">
@@ -741,7 +772,7 @@
                             <div class="faq-item active">
                                 <div class="faq-header">
                                     <h4>What services does Diana Glass provide?</h4>
-                                    <div class="faq-icon"><i class="ri-arrow-down-circle-line"></i></div>
+                                    <div class="faq-icon"><i class="ri-arrow-down-long-line"></i></div>
                                 </div>
                                 <div class="faq-content">
                                     <p>Diana Glass specializes in professional glass installation services for residential and commercial projects, including tempered glass, laminated glass, shower enclosures, glass railings, glass partitions, canopies, and building facades.</p>
@@ -752,7 +783,7 @@
                             <div class="faq-item">
                                 <div class="faq-header">
                                     <h4>Does Diana Glass offer site surveys?</h4>
-                                    <div class="faq-icon"><i class="ri-arrow-down-circle-line"></i></div>
+                                    <div class="faq-icon"><i class="ri-arrow-down-long-line"></i></div>
                                 </div>
                                 <div class="faq-content">
                                     <p>Yes. Our team can conduct on-site surveys, take accurate measurements, and recommend the most suitable glass solutions for your project requirements.</p>
@@ -763,7 +794,7 @@
                             <div class="faq-item">
                                 <div class="faq-header">
                                     <h4>How can I request a quotation?</h4>
-                                    <div class="faq-icon"><i class="ri-arrow-down-circle-line"></i></div>
+                                    <div class="faq-icon"><i class="ri-arrow-down-long-line"></i></div>
                                 </div>
                                 <div class="faq-content">
                                     <p>You can send us your drawings, dimensions, specifications, or project details through our contact form, email, or WhatsApp. Our team will provide a customized quotation based on your requirements.</p>
@@ -774,7 +805,7 @@
                             <div class="faq-item">
                                 <div class="faq-header">
                                     <h4>Do you provide professional installation?</h4>
-                                    <div class="faq-icon"><i class="ri-arrow-down-circle-line"></i></div>
+                                    <div class="faq-icon"><i class="ri-arrow-down-long-line"></i></div>
                                 </div>
                                 <div class="faq-content">
                                     <p>Yes. All installations are performed by experienced professionals following industry standards.</p>
@@ -785,7 +816,7 @@
                             <div class="faq-item">
                                 <div class="faq-header">
                                     <h4>How do I get started with Diana Glass?</h4>
-                                    <div class="faq-icon"><i class="ri-arrow-down-circle-line"></i></div>
+                                    <div class="faq-icon"><i class="ri-arrow-down-long-line"></i></div>
                                 </div>
                                 <div class="faq-content">
                                     <p>Contact our team with your project details. We will guide you through consultation, site survey, quotation, production, and installation.</p>
@@ -803,11 +834,11 @@
                     <div class="container">
                         <div class="row align-items-center">
 
-                        <div class="col-12 col-md-7">
-                            <h2>Modern Space with Glass</h2>
-                            <p>Clean glass designs create a modern look while making your space feel brighter, wider, and more elegant.</p>
+                        <div class="col-12 col-md-12">
+                            <h2>Enhance Your Home with Modern Glass Solutions</h2>
+                            <p>Transform your home with premium glass solutions that bring more natural light,<br>openness, and timeless elegance.</p>
                             <div class="sanno_cta">
-                                <a href="{{ route('show.contact') }}">Contact Us <i class="ri-arrow-right-circle-line"></i></a>
+                                <a href="{{ route('show.contact') }}">Contact Us <i class="ri-arrow-right-long-line"></i></a>
                             </div>
                         </div>
 
@@ -893,8 +924,7 @@ document.addEventListener('click', function(e) {
         const caption = e.target.dataset.lightboxCaption;     // Gets: "test"
         const category = e.target.dataset.lightboxCategory; 
         
-        console.log(imageSrc);
-        openLightbox(imageSrc, caption, category);
+        //openLightbox(imageSrc, caption, category);
     }
 });
 
