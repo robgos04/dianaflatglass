@@ -461,9 +461,9 @@ body {
 }
  
 .service-name {
-  font-family: var(--font-heading);
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  font-size: clamp(1rem, 2vw, 1.6rem);
+  font-weight: 400;
   color: var(--white);
   letter-spacing: 0.02em;
   margin-bottom: 4px;

@@ -194,16 +194,15 @@
         height: 150px;
         object-fit: contain;
         object-position: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
+        opacity: 1;
         position: absolute;
     }
-    .partner-card:hover h4 {
+    /*.partner-card:hover h4 {
         opacity: 0;
     }
     .partner-card:hover img {
         opacity: 1;
-    }
+    }*/
 
     .product-badge-coming-soon {
         position: absolute;
@@ -333,7 +332,7 @@
     }
     .project-card img{
         height: 100%;
-        width: 70%;
+        width: 60%;
         object-fit: contain;
         object-position: center;
     }
@@ -719,38 +718,31 @@
                     <div class="cards-row">
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>PT. Sanno</h4>
-                            <img src="{{ asset('/images/partners/sanno.svg') }}" alt="PT. Sanno" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/sanno-logo.svg') }}" alt="PT. Sanno" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>Allure Industries</h4>
-                            <img src="{{ asset('/images/partners/allure.svg') }}" alt="Allure Industries" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/allure-logo.svg') }}" alt="Allure Industries" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>Asahimas</h4>
-                            <img src="{{ asset('/images/partners/asahimas.svg') }}" alt="Asahimas" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/asahimas-logo.svg') }}" alt="Asahimas" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>Xinyi Glass</h4>
-                            <img src="{{ asset('/images/partners/xinyi_glass.svg') }}" alt="Xinyi Glass" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/xyg-logo.svg') }}" alt="Xinyi Glass" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>Omge Hardware</h4>
-                            <img src="{{ asset('/images/partners/omge.svg') }}" alt="Omge Hardware" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/omge-logo.svg') }}" alt="Omge Hardware" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>DormaKaba</h4>
-                            <img src="{{ asset('/images/partners/dormakaba.svg') }}" alt="DormaKaba" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/dormakaba-logo.svg') }}" alt="DormaKaba" loading="lazy"/>
                         </div>
 
                         <div class="col-12 col-md-3 project-card partner-card">
-                            <h4>Dekson</h4>
-                            <img src="{{ asset('/images/partners/dekson.svg') }}" alt="Dekson" loading="lazy"/>
+                            <img src="{{ asset('/images/partners/dekson-logo.svg') }}" alt="Dekson" loading="lazy"/>
                         </div>
 
                     </div> 
