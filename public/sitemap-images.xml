@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+    <url>
+        <loc>https://www.dianaflatglass.co.id/</loc>
+
+        <!-- Logo -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/diana_logo.png</image:loc>
+            <image:title>Diana Glass Logo</image:title>
+            <image:caption>Official logo of Diana Glass.</image:caption>
+        </image:image>
+
+        <!-- Hero -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/home_diana_bg.png</image:loc>
+            <image:title>Professional Glass Installation Services</image:title>
+            <image:caption>Professional glass installation services in South Sulawesi.</image:caption>
+        </image:image>
+
+        <!-- About -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/home_about_img.png</image:loc>
+            <image:title>About Diana Glass</image:title>
+            <image:caption>Professional glass contractor providing custom glass solutions.</image:caption>
+        </image:image>
+
+        <!-- Products & Services -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/product_exterior.png</image:loc>
+            <image:title>Exterior Glass</image:title>
+            <image:caption>We deliver customized solutions that combine strength, style, and functionality for any building.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/product_interior.png</image:loc>
+            <image:title>Interior Glass</image:title>
+            <image:caption>We provide versatile glass solutions to bring every design vision to life.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/product_aluminium.png</image:loc>
+            <image:title>Aluminium</image:title>
+            <image:caption>Durable, lightweight aluminum for versatile building solutions.</image:caption>
+        </image:image>
+
+	<image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/product_accessories.png</image:loc>
+            <image:title>Accessories</image:title>
+            <image:caption>Accessories for glass and aluminum with minimalist design.</image:caption>
+        </image:image>
+
+	<image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/product_survey_installation.png</image:loc>
+            <image:title>Survey & Installation</image:title>
+            <image:caption>Professional site survey and glass installation services by Diana Glass.</image:caption>
+        </image:image>
+
+        <!-- Projects -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/projects/project_exterior.png</image:loc>
+            <image:title>Exterior Glass Project</image:title>
+            <image:caption>Completed exterior glass project by Diana Glass.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/projects/project_interior.png</image:loc>
+            <image:title>Interior Glass Project</image:title>
+            <image:caption>Completed interior glass project by Diana Glass.</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/assets/images/projects/project_aluminium.png</image:loc>
+            <image:title>Aluminium Project</image:title>
+            <image:caption>Completed aluminium project by Diana Glass.</image:caption>
+        </image:image>
+
+	 <!-- Our Partners -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/partners_bg.png</image:loc>
+            <image:title>Our Partners</image:title>
+	    <image:caption>Trusted by architects, contractors, developers, and business partners across Indonesia.</image:caption>
+        </image:image>
+
+	<!-- Frequently Asked Questions -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/faq_bg.png</image:loc>
+            <image:title>Frequently Asked Questions</image:title>
+	    <image:caption>Answers to common questions about glass installation services, products, and project consultations.</image:caption>	
+        </image:image>
+
+	<!-- Contact Us -->
+        <image:image>
+            <image:loc>https://www.dianaflatglass.co.id/images/contact_us_bg.png</image:loc>
+            <image:title>Contact Us</image:title>
+	    <image:caption>Ready to start your project? Contact Diana Glass for professional consultation.</image:caption>	
+        </image:image>
+
+    </url>
+
+</urlset>
