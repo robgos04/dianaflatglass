@@ -29,15 +29,22 @@
         padding: 4% 4% 4% 5%;
         color: #ffffff;
     }
+    .sanno_left h2{
+        letter-spacing: -0.99px;
+        margin-bottom: 24px;
+        font-family: 'Asen pro', sans-serif;
+    }
     .sanno_left p{
-        font-size: 1.3rem;
-        font-family: 'Manrope', sans-serif;
+        font-size: 1.2rem;
+        font-family: 'Inter', sans-serif;
     }
     .sanno_right {
         padding-top: 7%;
         padding-left: 14%;
     }
-
+    .project_content h2 {
+        letter-spacing: -0.99px;
+    }
     .project_content .project-subtitle{
         font-size: 1rem;
         color: rgba(255, 255, 255, 0.85);
@@ -114,6 +121,7 @@
     .product-card {
         position: relative;
         width: 100%;
+        height: 100%;
         overflow: hidden;
     }
     .product-card img {
@@ -243,6 +251,13 @@
         transform: scale(1.1);
         z-index: -1;
     }
+    #faq_body::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4); /* #000000 dengan opacity 40% */
+        z-index: -1;
+    }
     .faq_left {
         padding-top: 3%;
         padding-bottom: 5%;
@@ -318,16 +333,17 @@
 
     /* Our Partners */
     .project-card{
-        border: 1px solid rgba(60, 60, 60, 0.75);
-        background: linear-gradient(
+        border: 1px solid #ffffff26;
+        /*background: linear-gradient(
         180deg,
         rgba(90, 90, 90, 0.75) 0%,
         rgba(60, 60, 60, 0.75) 100%
-        );
+        );*/
+        background: #FFFFFF1C;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding: 2%;
-        border-radius: 30px;
+        border-radius: 24px;
         max-height: 100px;
     }
     .project-card img{
@@ -350,7 +366,7 @@
             padding-top: 10%;
             padding-left: 10%;
             padding-right: 5%;
-            padding-bottom: 40%;
+            padding-bottom: 60%;
         }
         .sanno_content {
             padding: 4% 4% 4% 9%;
@@ -366,9 +382,13 @@
         }
         .projects_row { gap: 20px; }
         .project_content { padding: 7%; }
+        #project_body .divider { width: 0 !important; }
         footer {
-            padding-top: 230px;
-            margin-top: -185px;
+            padding-top: 240px;
+            margin-top: -210px;
+        }
+        .cta-section {
+            margin: -230px 16px 0;  /* reduce side margins on mobile */
         }
     }
     @media screen and (min-width: 1900px) { /* large screen pc */
@@ -480,7 +500,7 @@
             <div id="home_body" class="home_title">
                 <div class="row">
                     <div class="col-md-8 col-sm-8">
-                        <p><b>Professional <i>Glass Installation Services</i> in South Sulawesi</b></p>
+                        <h1><b>Professional <i>Glass Installation<br>Services</i> in South Sulawesi</b></h1>
                     </div>
                     <div class="col-md-4 col-sm-4">
                     </div>     
@@ -528,7 +548,7 @@
                             </div>
                             <div class="col-md-4 col-sm-4 sanno_right">
                                 <div class="sanno_cta">
-                                    <a href="https://www.sannoglass.com/">Contact Us <i class="ri-arrow-right-long-line"></i></a>
+                                    <a href="https://www.sannoglass.com/">Read More <i class="ri-arrow-right-long-line"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -540,7 +560,7 @@
             <div id="product_body">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
-                        <h2>Our Product & Service</h2>
+                        <h2>Our Products & Services</h2>
                         <p class="product-subtitle">Discover premium glass products and professional installation services<br>for residential, commercial, and architectural projects.</p>
                     </div>
                 </div>
@@ -635,14 +655,14 @@
 
                     <!-- Left: Title & Description -->
                     <div class="col-md-8 col-sm-8">
-                        <h2>Our Project</h2>
-                        <p class="project-subtitle">Explore our Interior glass, Exterior glass, and Aluminium projects, completed with quality materials and professional workmanship.</p>
+                        <h2>Our Projects</h2>
+                        <p class="product-subtitle">Explore our Interior glass, Exterior glass, and Aluminium projects, completed with quality materials and professional workmanship.</p>
                     </div>
 
                     <!-- Right: Button -->
                     <div class="col-md-4 col-sm-4 d-flex justify-content-md-end ">
                         <div class="sanno_cta">
-                            <a href="{{ route('show.project') }}">See All Project <i class="ri-arrow-right-long-line"></i></a>
+                            <a href="{{ route('show.project') }}">See All Projects <i class="ri-arrow-right-long-line"></i></a>
                         </div>
                     </div>
 
@@ -652,7 +672,7 @@
                     <div class="row projects_row">
                         <div class="col-md-4 col-sm-12">
                             <div class="product-card">
-                                <img src="{{ asset('/images/projects/'.$latestExterior->projectpic) }}" alt="Exterior Glass" loading="lazy">
+                                <img src="{{ asset('/images/project_home_exterior.png') }}" alt="Exterior Glass" loading="lazy">
 
                                 <div class="product-card-overlay">
                                     <div class="product-card-text">
@@ -667,7 +687,7 @@
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="product-card">
-                                <img src="{{ asset('/images/projects/'.$latestInterior->projectpic) }}" alt="Interior Glass" loading="lazy">
+                                <img src="{{ asset('/images/project_home_interior.png') }}" alt="Interior Glass" loading="lazy">
 
                                 <div class="product-card-overlay">
                                     <div class="product-card-text">
@@ -682,7 +702,7 @@
                         </div>
                         <div class="col-md-4 col-sm-12">
                             <div class="product-card">
-                                <img src="{{ asset('/images/projects/'.$latestAluminium->projectpic) }}" alt="Aluminium" loading="lazy">
+                                <img src="{{ asset('/images/project_home_aluminium.png') }}" alt="Aluminium" loading="lazy">
 
                                 <div class="product-card-overlay">
                                     <div class="product-card-text">
@@ -849,11 +869,11 @@
             <!-- Col 1: Logo + Tagline + Socials -->
             <div class="col-12 col-md-5 footer-brand">
                 <img src="{{ asset('/images/diana_logo.png') }}" alt="Diana Flat Glass" class="footer-logo">
-                <p class="footer-tagline"><strong>Diana Flat Glass</strong> is the first Tempered Glass factory<br>in South Sulawesi.</p>
+                <p class="footer-tagline">Transforming residential, commercial, and<br>architectural spaces with premium glass<br>solutions.</p>
                 <div class="footer-socials">
-                    <a href="https://www.instagram.com/diana.flatglass/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/share/17jwUP67ve/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/diana.flatglass/" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="https://www.facebook.com/share/17jwUP67ve/" aria-label="Facebook"><i class="ri-facebook-line"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
                 </div>
             </div>
 
@@ -863,7 +883,7 @@
                 <ul>
                     <li><a href="#home_body">Home</a></li>
                     <li><a href="#about_body">About Us</a></li>
-                    <li><a href="#product_body">Product</a></li>
+                    <li><a href="#product_body">Product & Services</a></li>
                     <li><a href="{{ route('show.project') }}">Project</a></li>
                     <li><a href="#faq_body">FAQ</a></li>
                     <li><a href="{{ route('show.career') }}">Careers</a></li>
@@ -876,19 +896,19 @@
                 <h6 class="footer-col-title">Connect with Us</h6>
 
                 <div class="footer-location">
-                    <p class="footer-location-title"><i class="fas fa-map-marker-alt"></i> <strong>Store</strong></p>
+                    <p class="footer-location-title"><i class="ri-map-pin-2-line"></i> <strong>Store</strong></p>
                     <p>Jl. Sulawesi No. 289, Kota Makassar</p>
-                    <p><i class="fas fa-envelope"></i><a href="mailto:info@dianaflatglass.com" style="color:#ffffff !important;"> info@dianaflatglass.com</a></p>
-                    <p><i class="fas fa-phone"></i><a href="https://wa.me/+6285397277930" target="_blank" style="color:#ffffff !important;"> 0853-9727-7930</a></p>
+                    <p><i class="ri-mail-line"></i><a href="mailto:info@dianaflatglass.com" style="color:#ffffff !important;"> info@dianaflatglass.com</a></p>
+                    <p><i class="ri-phone-line"></i><a href="https://wa.me/+6285397277930" target="_blank" style="color:#ffffff !important;"> 0853-9727-7930</a></p>
                 </div>
 
                 <hr class="footer-divider">
 
                 <div class="footer-location">
-                    <p class="footer-location-title"><i class="fas fa-map-marker-alt"></i> <strong>Workshop</strong></p>
+                    <p class="footer-location-title"><i class="ri-map-pin-2-line"></i> <strong>Workshop</strong></p>
                     <p>Jl. Kima XIV Kav. SS-14, Daya</p>
-                    <p><i class="fas fa-envelope"></i><a href="mailto:info@sannoglass.com" style="color:#ffffff !important;"> info@sannoglass.com</a></p>
-                    <p><i class="fas fa-phone"></i><a href="https://wa.me/+6285397277930" target="_blank" style="color:#ffffff !important;"> 0853-9727-7930</a></p>
+                    <p><i class="ri-mail-line"></i><a href="mailto:info@sannoglass.com" style="color:#ffffff !important;"> info@sannoglass.com</a></p>
+                    <p><i class="ri-phone-line"></i><a href="https://wa.me/+6285397277930" target="_blank" style="color:#ffffff !important;"> 0853-9727-7930</a></p>
                 </div>
             </div>
 

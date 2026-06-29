@@ -7,7 +7,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        height: 260px;
+        height: 400px;
         display:flex;
         align-items:center;
         justify-content:space-between;
@@ -15,17 +15,20 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-    .project-top h1{font-size:36px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%;}
+    .project-top h1{font-size:56px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%; letter-spacing: -0.99px;}
     .project-top-copy {
-        max-width: 420px;
         text-align: left;
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        line-height: 1.6;
-        color: rgba(255,255,255,0.92);
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: rgba(255,255,255);
         margin: 0;
     }
-    .project-top-copy p{ margin-bottom: -2rem; }
+    .project-top-copy p {
+        margin-bottom: -2rem;
+        text-align: left;
+        font-size: 1rem;
+    }
     .general-list { 
         margin: 2% 5% 15% 5%;
     }
@@ -93,7 +96,7 @@
         <div class="row project-top text-start">
             <h1>Contact Us</h1>
             <div class="project-top-copy">
-                <p>Ready to start your project? Contact Diana Glass for professional consultation, customized glass solutions, and reliable installation services.</p>
+                <p>Ready to start your project? Contact Diana Glass<br>for professional consultation, customized glass<br>solutions, and reliable installation services.</p>
             </div>
         </div>
 

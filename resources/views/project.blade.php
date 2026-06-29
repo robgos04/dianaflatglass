@@ -7,7 +7,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        height: 260px;
+        height: 400px;
         display:flex;
         align-items:center;
         justify-content:space-between;
@@ -15,68 +15,70 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-    .project-top h1{font-size:36px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%;}
+    .project-top h1{font-size:56px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%; letter-spacing: -0.99px;}
     .project-top-copy {
-        max-width: 420px;
         text-align: left;
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        line-height: 1.6;
-        color: rgba(255,255,255,0.92);
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: rgba(255,255,255);
         margin: 0;
     }
     .project-top-copy p {
         margin-bottom: -2rem;
+        text-align: left;
+        font-size: 1rem;
     }
 
     /* Tab Navigation */
     .project-tabs {
         display: flex;
         justify-content: center;
-        background: rgba(60, 55, 53, 0.55);
+        background: rgba(60, 55, 53, 0.2);
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         gap: 0;
-        border-radius: 16px;
-        margin: -3% auto 0;
+        border-radius: 32px 32px 0 0;
+        margin: -2% auto 0;
         position: relative;
         z-index: 5;
-        width: 70%;
+        width: 67%;
         padding: 8px 0;
+        top: -15px;
     }
     .project-tab {
         flex: 1;
         padding: 16px 40px;
-        color: rgba(255,255,255,0.75);
+        color: #FFF;
         font-family: 'Inter', sans-serif;
-        font-size: 1.1rem;
+        font-size: 1.25rem;
         font-weight: 600;
         cursor: pointer;
         border-bottom: none;
         transition: all 0.2s ease;
-        letter-spacing: 0.02em;
+        letter-spacing: -0.56px;
         background: none;
         border: none;
         position: relative;
     }
     .project-tab:hover {
-        color: #ffffff;
+        color: #FFBCBC;
         outline: none;
     }
     .project-tab.active {
-        color: #E8A598;
+        color: #FFBCBC;
         outline:none;
     }
     .project-tab.active::after {
         content: '';
         position: absolute;
-        bottom: 6px;
+        bottom: -8px;
         left: 50%;
         transform: translateX(-50%);
-        width: 60px;
-        height: 3px;
-        background: #E8A598;
-        border-radius: 2px; 
+        width: 72px;
+        height: 4px;
+        background: #FFBCBC;
+        border-radius: 4px 4px 0 0; 
         outline:none;
     }
 
@@ -213,7 +215,7 @@
 
     .project-list { 
         margin-bottom: 15%;
-        margin-top: -2.5%; 
+        margin-top: -3.5%; 
     }
 
     @media screen and (max-width: 600px) {

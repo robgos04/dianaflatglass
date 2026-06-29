@@ -7,7 +7,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        height: 260px;
+        height: 400px;
         display:flex;
         align-items:center;
         justify-content:space-between;
@@ -15,14 +15,13 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-    .project-top h1{font-size:36px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%;}
+    .project-top h1{font-size:56px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%; letter-spacing: -0.99px;}
     .project-top-copy {
-        max-width: 420px;
         text-align: left;
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        line-height: 1.6;
-        color: rgba(255,255,255,0.92);
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: rgba(255,255,255);
         margin: 0;
     }
     .general-list { 
@@ -32,6 +31,7 @@
         color: #4B4B4B !important;
         font-family: 'Manrope', sans-serif;
         font-size: 15px;
+        text-align: justify;
     }
     .general-list h2{
         color: black;
@@ -121,7 +121,7 @@
                     <p>Kami berhak memperbarui Kebijakan Privasi ini sewaktu-waktu. Setiap perubahan akan dipublikasikan melalui halaman ini dan berlaku sejak tanggal pembaruan.</p>
                     <h2>9. Hubungi Kami</h2>
                     <p>Jika Anda memiliki pertanyaan mengenai Kebijakan Privasi ini atau penggunaan data pribadi Anda, silakan menghubungi kami melalui:</p>
-                    <p>DIANA GLASS<br>Email: retail@dianaflatglass.com<br>Telepon: 0853-9727-7930<br>Alamat: Jl. Sulawesi No.289, Butung, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90164</p>
+                    <p>DIANA GLASS<br>Email: info@dianaflatglass.com<br>Telepon: 0853-9727-7930<br>Alamat: Jl. Sulawesi No.289, Butung, Kec. Wajo, Kota Makassar, Sulawesi Selatan 90164</p>
                 </div>
             </div>
 

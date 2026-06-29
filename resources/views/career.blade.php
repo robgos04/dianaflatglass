@@ -7,7 +7,7 @@
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        height: 260px;
+        height: 400px;
         display:flex;
         align-items:center;
         justify-content:space-between;
@@ -15,24 +15,34 @@
         padding-left: 100px;
         padding-right: 100px;
     }
-    .project-top h1{font-size:36px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%;}
+    .project-top h1{font-size:56px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%; letter-spacing: -0.99px;}
     .project-top-copy {
-        max-width: 420px;
         text-align: left;
-        font-family: 'Inter', sans-serif;
-        font-size: 1rem;
-        line-height: 1.6;
-        color: rgba(255,255,255,0.92);
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.4;
+        color: rgba(255,255,255);
         margin: 0;
     }
     .project-top-copy p{
         margin-bottom: -2rem;
+        text-align: left;
+        font-size: 1rem;
     }
     .general-list { 
         margin: 2% 5% 15% 5%;
     }
     .general-list p{
-        color: black;
+        color: #4B4B4B;
+        font-size: 1.2rem;
+        font-family: 'Manrope', sans-serif;
+    }
+    h3 {
+        font-size: 40px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        letter-spacing: -0.99px;
+        color: #000000e3;
     }
 
     @media screen and (max-width: 600px) {
@@ -54,7 +64,7 @@
         <div class="row project-top text-start">
             <h1>Career</h1>
             <div class="project-top-copy">
-                <p>Join our team and grow with a glass company committed to quality, innovation, and professionalism in every process.</p>
+                <p>Join our team and grow with a glass company<br>committed to quality, innovation, and<br>professionalism in every process.</p>
             </div>
         </div>
 
