@@ -14,6 +14,7 @@
         color: #ffffff;
         padding-left: 100px;
         padding-right: 100px;
+        margin-bottom: -8%;
     }
     .project-top h1{font-size:56px; font-weight:700; display:inline-flex; align-items:center; gap:12px; margin:4% 0 0 -2%; letter-spacing: -0.99px;}
     .project-top-copy {
@@ -39,12 +40,12 @@
         -webkit-backdrop-filter: blur(10px);
         gap: 0;
         border-radius: 32px 32px 0 0;
-        margin: -2% auto 0;
+        margin: 0 auto;
         position: relative;
         z-index: 5;
-        width: 67%;
+        width: min(67%, 1100px);
         padding: 8px 0;
-        top: -15px;
+        transform: translate(-35px);
     }
     .project-tab {
         flex: 1;
@@ -215,7 +216,7 @@
 
     .project-list { 
         margin-bottom: 15%;
-        margin-top: -3.5%; 
+        margin-top: -35px; 
     }
 
     @media screen and (max-width: 600px) {
