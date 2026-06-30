@@ -220,7 +220,7 @@
     }
 
     @media screen and (max-width: 600px) {
-        .project-top{height:auto; padding-left:50px; padding-right:50px; justify-content:center; flex-wrap:wrap; text-align:center; padding-top: 20%; padding-bottom: 80px;}
+        .project-top{height:auto; padding-left:50px; padding-right:50px; justify-content:center; flex-wrap:wrap; text-align:center; padding-top: 20%; padding-bottom: 100px;}
         .project-top h1{font-size:24px; width:100%; justify-content:center;}
         .project-top-copy { width:100%; text-align:center; margin-top: 18px; }
         .project-list { margin-bottom: 40%; margin-top: -11%; }
@@ -235,8 +235,8 @@
         .grid-interior .project-card img { height: 180px; }
         .project-tabs {
             width: 92%;
-            border-radius: 12px;
             bottom: 15px;
+            left: 35px;
         }
         .project-tab {
             padding: 12px 16px;
