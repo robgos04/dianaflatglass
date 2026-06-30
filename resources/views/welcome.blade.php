@@ -384,8 +384,8 @@
         .project_content { padding: 7%; }
         #project_body .divider { width: 0 !important; }
         footer {
-            padding-top: 240px;
-            margin-top: -210px;
+            padding-top: 280px;
+            margin-top: -60%;
         }
         .cta-section {
             margin: -230px 16px 0;  /* reduce side margins on mobile */
