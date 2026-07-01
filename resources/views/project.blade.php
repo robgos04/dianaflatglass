@@ -249,6 +249,8 @@
     @media screen and (min-width: 1900px) {
         .project-top { height: 300px; }
         .project-top h1 { margin-left: 0; }
+        .project-tabs { top: 100px; }
+        .project-list { margin-top: 60%; }
     }
     </style>
     <body>
