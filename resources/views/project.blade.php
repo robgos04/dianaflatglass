@@ -250,7 +250,7 @@
         .project-top { height: 300px; }
         .project-top h1 { margin-left: 0; }
         .project-tabs { top: 100px; }
-        .project-list { margin-top: 60%; }
+        .project-list { margin-top: 3%; }
     }
     </style>
     <body>
